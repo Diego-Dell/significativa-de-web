@@ -1,64 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+
     <link rel="stylesheet" href="style.css">
-
-
     <link rel="stylesheet" href="../bootstrap/bootstrap-5.3.8-dist/css/bootstrap.min.css">
-    <title>Home</title>
 </head>
 <body>
-    <header class="header">
+    <header class="encabezado">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <a class="navbar-brand fw-semibold" href="index.html">Mark Zuckerberg</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Menú">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="#">Hidden brand</a>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
 
-                    <li class="nav-item">
-                    <a class="nav-link" href="biografia.html">Biografia</a>
-                    </li>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="biografia.html">Biografía</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Filosofia_Empresarial.html">Filosofía</a></li>
+                        <li class="nav-item"><a class="nav-link" href="filantropia.html">Filantropía</a></li>
+                        <li class="nav-item"><a class="nav-link" href="trayectoria_profesional.html">Trayectoria</a></li>
+                    </ul>
 
-                    <li class="nav-item">
-                    <a class="nav-link" href="Filosofia_Empresarial.html">Filosofia</a>
-                    </li>
-
-                    <li class="nav-item">
-                    <a class="nav-link" href="filantropia.html">Filantropia</a>
-                    </li>
-
-                    <li class="nav-item">
-                    <a class="nav-link" href="trayectoria_profesional.html">Trayectoria</a>
-                    </li>
-
-                    <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
 
-    <main class="main">
-        
+    <main class="principal">
+
+        <section class="py-5 bg-body-secondary">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-7">
+                        <h1 class="display-5 fw-bold mb-3">Mark Zuckerberg</h1>
+                        <p class="lead mb-4">
+                            Fundador de Facebook y actual líder de Meta, figura clave en la revolución digital moderna.
+                            Su historia combina innovación tecnológica, visión empresarial y debates sobre privacidad
+                            y ética en la era de los datos. Su objetivo siempre ha sido claro:
+                            <span class="fw-semibold">“conectar a todas las personas del mundo”.</span>
+                        </p>
+                        <div class="d-flex gap-2">
+                            <a href="biografia.html" class="btn btn-primary btn-lg">Ver biografía</a>
+                            <a href="Filosofia_Empresarial.html" class="btn btn-outline-primary btn-lg">Filosofía</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="ratio ratio-16x9 rounded overflow-hidden">
+                            <div id="carruselMeta" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="4000">
+                                        <img src="../imagenes/meta_apps.jpg" class="d-block w-100" alt="Aplicaciones Meta">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="4000">
+                                        <img src="../imagenes/meta_quest3.jpg" class="d-block w-100" alt="Lentes de realidad virtual">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="4000">
+                                        <img src="../imagenes/meta_rai_ban.webp" class="d-block w-100" alt="Lentes Meta Ray-Ban">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="4000">
+                                        <img src="../imagenes/zucknet.jpeg" class="d-block w-100" alt="Zucknet">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carruselMeta" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carruselMeta" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <p class="fs-5">
+                            Este sitio explora los momentos más importantes de su historia:
+                            desde los primeros proyectos en Harvard, el nacimiento de <span class="fw-semibold">The Facebook (2004)</span>,
+                            las innovaciones que transformaron la comunicación digital y su evolución hacia
+                            <span class="fw-semibold">Meta</span>, una empresa que impulsa la realidad virtual, la inteligencia artificial
+                            y el metaverso.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="py-4">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Biografía</h5>
+                                <p class="card-text">Conoce sus orígenes, formación y el nacimiento de Facebook.</p>
+                                <a href="biografia.html" class="btn btn-primary">Abrir</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Filosofía</h5>
+                                <p class="card-text">Descubre cómo piensa sobre datos, sociedad y conexión humana.</p>
+                                <a href="Filosofia_Empresarial.html" class="btn btn-primary">Abrir</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Filantropía</h5>
+                                <p class="card-text">Su compromiso con la responsabilidad social y la transparencia.</p>
+                                <a href="filantropia.html" class="btn btn-primary">Abrir</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Trayectoria</h5>
+                                <p class="card-text">Evolución profesional y expansión de sus empresas.</p>
+                                <a href="trayectoria_profesional.html" class="btn btn-primary">Abrir</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row mt-5 g-3">
+                    <div class="col-6 col-lg-3">
+                        <div class="p-4 bg-body-tertiary rounded text-center h-100">
+                            <div class="h4 mb-1">2004</div>
+                            <div class="small text-muted">Nacimiento de Facebook</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="p-4 bg-body-tertiary rounded text-center h-100">
+                            <div class="h4 mb-1">2 Adquisiciones</div>
+                            <div class="small text-muted">Instagram y WhatsApp</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="p-4 bg-body-tertiary rounded text-center h-100">
+                            <div class="h4 mb-1">Meta</div>
+                            <div class="small text-muted">Realidad virtual y metaverso</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="p-4 bg-body-tertiary rounded text-center h-100">
+                            <div class="h4 mb-1">Privacidad</div>
+                            <div class="small text-muted">Debate global de datos</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="py-5 bg-body-secondary">
+            <div class="container">
+                <blockquote class="blockquote text-center">
+                    <p class="mb-3 fs-4">“Conectar a todos” es la base de su visión tecnológica y humana.</p>
+                    <footer class="blockquote-footer">Mark Zuckerberg</footer>
+                </blockquote>
+            </div>
+        </section>
     </main>
-    
-    <footer class="footer">
-        
+
+    <footer class="pie-de-pagina py-4">
+        <div class="container text-center text-muted">
+            © 2025 Página informativa sobre Mark Zuckerberg
+        </div>
     </footer>
+
     <script src="../bootstrap/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
