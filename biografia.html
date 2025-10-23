@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografía</title>
+
     <link rel="stylesheet" href="style.css">
-
-
-    <link rel="stylesheet" href="../bootstrap/bootstrap-5.3.8-dist/css/bootstrap.min.css">
-    <title>biografia</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap-5.3.8-dist/css/bootstrap.min.css">
 </head>
 <body>
     <header class="encabezado">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a href="index.html"><img src="../imagenes/FONDO CLARO.png" alt="logo diego dell" class="logo-navbar"></a>
+                <a href="index.html"><img src="imagenes/FONDO CLARO.png" alt="logo" class="logo-navbar"></a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Menú">
                     <span class="navbar-toggler-icon"></span>
@@ -21,8 +20,8 @@
 
                 <div class="collapse navbar-collapse" id="menuPrincipal">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="biografia.html">Biografía</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="biografia.html">Biografía</a></li>
                         <li class="nav-item"><a class="nav-link" href="Filosofia_Empresarial.html">Filosofía</a></li>
                         <li class="nav-item"><a class="nav-link" href="filantropia.html">Filantropía</a></li>
                         <li class="nav-item"><a class="nav-link" href="trayectoria_profesional.html">Trayectoria</a></li>
@@ -37,13 +36,82 @@
         </nav>
     </header>
 
-    <main class="main">
+    <main class="principal py-5">
+        <div class="container">
+            <h1 class="text-center mb-5 fw-bold">Biografía de Mark Zuckerberg</h1>
 
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <img src="imagenes/meta_apps.jpg" alt="Mark Zuckerberg joven" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <p class="fs-5">
+                        Mark Elliot Zuckerberg nació el <strong>14 de mayo de 1984</strong> en White Plains, Nueva York.
+                        Desde joven mostró interés por la programación y la tecnología. A los 12 años desarrolló un sistema de mensajería llamado
+                        <em>ZuckNet</em> que permitía comunicarse entre su casa y el consultorio dental de su padre.
+                    </p>
+                    <p class="fs-5">
+                        Durante su etapa escolar destacó en ciencias y programación. En la preparatoria Phillips Exeter Academy creó
+                        “<strong>Synapse</strong>”, un reproductor musical que aprendía los gustos del usuario mediante inteligencia artificial.
+                        Empresas como Microsoft mostraron interés en comprarlo, pero Mark decidió continuar sus estudios en la <strong>Universidad de Harvard</strong>.
+                    </p>
+                </div>
+            </div>
+
+            <hr class="my-5">
+
+            <div class="row g-4">
+                <div class="col-lg-6 order-lg-2">
+                    <img src="imagenes/zucknet.jpeg" alt="The Facebook en Harvard" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <h2 class="fw-semibold mb-3">Nacimiento de Facebook</h2>
+                    <p class="fs-5">
+                        En Harvard, Zuckerberg estudió <strong>Psicología</strong> y <strong>Ciencias de la Computación</strong>.
+                        En 2003 creó <em>FaceMash</em>, una página que comparaba fotos de estudiantes, la cual causó polémica y fue cerrada por la universidad.
+                    </p>
+                    <p class="fs-5">
+                        Un año después, el <strong>4 de febrero de 2004</strong>, lanzó junto a sus compañeros <strong>“The Facebook”</strong>,
+                        una red exclusiva para los estudiantes de Harvard. Su éxito fue tan grande que pronto se expandió a otras universidades y luego al público general.
+                    </p>
+                </div>
+            </div>
+
+            <hr class="my-5">
+
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <img src="imagenes/meta_quest3.jpg" alt="Meta y la realidad virtual" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="fw-semibold mb-3">Expansión y liderazgo</h2>
+                    <p class="fs-5">
+                        Zuckerberg se asoció con <strong>Eduardo Saverin</strong>, <strong>Dustin Moskovitz</strong> y <strong>Chris Hughes</strong>
+                        para ampliar la red. Con el tiempo, incorporó nuevas funciones como el <em>News Feed</em> y el botón “Me gusta”.
+                    </p>
+                    <p class="fs-5">
+                        Facebook creció rápidamente hasta convertirse en una de las plataformas más influyentes del mundo.
+                        Más tarde, la compañía adquirió <strong>Instagram</strong> y <strong>WhatsApp</strong>, y en 2021 cambió su nombre a <strong>Meta Platforms</strong>,
+                        enfocándose en la realidad virtual, aumentada y el metaverso.
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <blockquote class="blockquote">
+                    <p class="fs-4 mb-3">“El mayor riesgo es no correr ninguno.”</p>
+                    <p class="blockquote-footer">Mark Zuckerberg</p>
+                </blockquote>
+            </div>
+        </div>
     </main>
 
-    <footer class="footer">
-
+    <footer class="pie-de-pagina py-4">
+        <div class="container text-center text-muted">
+            © 2025 Página informativa sobre Mark Zuckerberg
+        </div>
     </footer>
-    <H1>BIOGRAFIA</H1>
+
+    <script src="bootstrap/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
