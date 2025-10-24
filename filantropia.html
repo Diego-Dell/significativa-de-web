@@ -1,48 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bootstrap/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Filantropía</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="bootstrap/bootstrap-5.3.8-dist/css/bootstrap.min.css"/>
 </head>
 <body>
     <header class="encabezado">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a href="index.html"><img src="imagenes/FONDO CLARO.png" alt="logo" class="logo-navbar"></a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Menú">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="menuPrincipal">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="biografia.html">Biografía</a></li>
-                        <li class="nav-item"><a class="nav-link" href="Filosofia_Empresarial.html">Filosofía</a></li>
-                        <li class="nav-item"><a class="nav-link" href="filantropia.html">Filantropía</a></li>
-                        <li class="nav-item"><a class="nav-link" href="trayectoria_profesional.html">Trayectoria</a></li>
-                    </ul>
-
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                        <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
-                </div>
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <img src="imagenes/FONDO CLARO.png" alt="logo" class="logo-navbar"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Menú">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="biografia.html">Biografía</a></li>
+                <li class="nav-item"><a class="nav-link" href="Filosofia_Empresarial.html">Filosofía</a></li>
+                <li class="nav-item"><a class="nav-link active" href="filantropia.html">Filantropía</a></li>
+                <li class="nav-item"><a class="nav-link" href="trayectoria_profesional.html">Trayectoria</a></li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar"/>
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
             </div>
+        </div>
         </nav>
     </header>
 
-    <main class="main">
+    <main class="principal">
+        <section class="py-5 bg-body-secondary">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+            <div class="col-lg-5">
+                <h1 class="fw-bold mb-3">Filantropía</h1>
+                <p class="lead mb-3">
+                se enfatiza el impacto social de sus plataformas, el debate sobre privacidad y el rol de la tecnología para “conectar a todos”.
+                </p>
+                <div class="d-flex flex-wrap gap-2">
+                <span class="badge text-bg-primary">Conexión humana</span>
+                <span class="badge text-bg-secondary">Responsabilidad</span>
+                <span class="badge text-bg-info">Privacidad</span>
+                <span class="badge text-bg-success">Comunidad</span>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="ratio ratio-16x9 rounded overflow-hidden shadow">
+                <img src="imagenes/meta_apps.jpg" class="w-100 h-100 object-fit-cover" alt="Impacto social y comunidad"/>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
 
+        <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <div class="p-4 bg-body-tertiary rounded">
+                <h2 class="h4 fw-semibold mb-3">Ideas destacadas del video</h2>
+                <ul class="mb-0">
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing el <mark class="otro-mark">t. Ratione earum corporis autem aperiam, dolores fuga hic veritatis odio minima delectus quidem atque reprehenderit qui assumenda, dolore qua</mark>si nostrum adipisci tenetur?</li>
+                    <li>Lorem <mark>ipsum dolor sit amet consectetur adipisicing elit. Magnam, nesciunt incidunt unde praesentium tempora dolorum facere, voluptatibus voluptatum dolor ad nihil </mark> et magni recusandae placeat enim molestiae corporis est quos.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. <strike> Expedita nihil quos, eveniet assumenda doloribus modi. Autem molestiae fugit iure sit perferendis des</strike>erunt harum omnis voluptatibus ea, corporis est expedita magni!</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat unde, a blanditiis voluptate <strong>voluptatibus doloremque provident</strong> reprehenderit, fuga temporibus asperiores, magnam ullam saepe ad eos. Autem sapiente reprehenderit provident odio?</li>
+                </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
     </main>
 
-    <footer class="footer">
-
+    <footer class="pie-de-pagina py-4">
+        <div class="container text-center text-muted">
+        © 2025 Página informativa sobre Mark Zuckerberg
+        </div>
     </footer>
-    <h1>filantropia EN PROCESO</h1>
+
+    <script src="bootstrap/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

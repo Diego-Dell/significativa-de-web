@@ -16,3 +16,11 @@
 .nav-link:hover {
     color: rgb(255, 255, 255) !important;
 }
+
+.otro-mark {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    font: italic;
+    font-size: 25px;
+}
